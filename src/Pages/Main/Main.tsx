@@ -28,24 +28,7 @@ const Main = () => {
             <section className="about-me">
                 <h2>About me</h2>
                 <div className="about-me-content">
-                    <Carousel></Carousel>
-                    <div className="professional">
-                        <h3>Profesional</h3>
-                        <p>Soy una persona sobre todo curiosa. Autodidacta en desarrollo web, estoy especializado en React
-                             y me manejo con Express en el backend y MongoDB para hacer mis cosas. No soy muy fan de las librerías de
-                             ya diseño ya que por alguna razón me divierte usar css vanilla, aunque me apaño con ellas. 
-                            <br /><br />
-                            A parte de eso, tengo formación audiovisual y un grado en Asia Oriental.
-                        </p>
-                    </div>
-                    <div className="personal">
-                        <h3>A parte del trabajo</h3>
-                        <p>Escalo, toco el bajo, escribo cosas y estudio. Dos 
-                            temas que me apasionan y que me parecen fundamentales para entender al ser humano son el ritual y su 
-                            importancia en la sociedad (desde un punto de vista evolutivo) y la filosofía política y son en lo que 
-                            estoy invirtiendo mi tiempo libre ahora. 
-                        </p>
-                    </div>
+                    <Carousel />
                 </div>
             </section>
             <section className="techs">
