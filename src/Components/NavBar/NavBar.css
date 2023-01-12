@@ -1,0 +1,88 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 85%;
+    margin: 2rem auto;
+
+    position: fixed;
+    width: 100%;
+    padding: 0 3.5rem 0 0;
+
+    z-index: 1;
+
+    transform: translateY(-40%);
+}
+
+.nav-container {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav i {
+    font-size: 2rem;
+    padding-left: 1.75rem;
+}
+
+.nav-links {
+    list-style: none;
+    background-color: transparent;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    align-items: center;
+
+}
+
+.div-drawercomp {
+    transform: translateZ(-100%);
+    transition: transform 2s;
+}
+
+.smooth {
+    transform: translateY(0);
+    transition: 1s;
+}
+
+@media (min-width: 720px) {
+
+    nav {
+        display: inline-block;
+    }
+
+    .nav-container {
+        width: 97%;
+        margin: 0 auto 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+/* Hamburger menu */
+.nav-container .mobile-navigation {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .nav-container .navigation {
+        display: none;
+    }
+
+    .nav-container .mobile-navigation {
+        display:block;
+        transition: 300ms;
+    }
+
+    .nav-container .mobile-navigation:hover {
+        cursor: pointer;
+        transform: scale(110%);
+    }
+}

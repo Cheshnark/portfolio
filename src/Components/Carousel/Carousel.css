@@ -1,0 +1,23 @@
+.main-carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-icon {
+    color: #4F091D;
+    position: absolute;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.carousel {
+    display: inline-block;
+    white-space: nowrap;
+}

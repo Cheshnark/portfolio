@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3 {
+  font-family: 'Amatic SC', cursive;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+p,li {
+  font-family: 'Work Sans', sans-serif;
+  color: #4F091D;
+
+  white-space: pre-line;
+}
