@@ -13,7 +13,25 @@ const Main = () => {
         <main>
             <section className="front" id='front'>
                 <div className="front-container">
-                    <h1>Alejandro Rubio Suela</h1>
+                    <h1>
+                        <span>A</span>
+                        <span>l</span>
+                        <span>e</span>
+                        <span>j</span> 
+                        <span>a</span>
+                        <span>n</span>
+                        <span>d</span>
+                        <span>r</span>
+                        <span>o</span> <span>R</span>
+                        <span>u</span>
+                        <span>b</span>
+                        <span>i</span>
+                        <span>o</span> <span>S</span>
+                        <span>u</span>
+                        <span>e</span>
+                        <span>l</span>
+                        <span>a</span>
+                    </h1>
                     <p>Desarrollador web</p>
                 </div>
             </section>

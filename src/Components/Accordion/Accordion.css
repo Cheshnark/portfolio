@@ -64,6 +64,7 @@ img {
     .proyects-container {
         width: 75%;
         max-width: 1200px;
+        margin-bottom: 5rem;
     }
 
     .expandable {

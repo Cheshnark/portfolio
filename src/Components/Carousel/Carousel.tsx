@@ -52,9 +52,9 @@ const Carousel = () => {
                     <h3>Profesional</h3>
                     <p>Soy una persona sobre todo curiosa. Autodidacta en desarrollo web, estoy especializado en React
                          y me manejo con Express en el backend y MongoDB para hacer mis cosas. No soy muy fan de las librerías de
-                         diseño ya que por alguna razón me divierte usar css vanilla, aunque me apaño con ellas. 
+                         componentes ya que por alguna razón me divierte usar css vanilla, aunque me apaño con ellas. 
                         <br /><br />
-                        A parte de eso, tengo formación audiovisual y un grado en Asia Oriental especializado en China.
+                        A parte de eso, tengo formación audiovisual y un grado en Asia Oriental con especialización en China.
                     </p>
                 </div>
                 <div className="carousel-item personal">
