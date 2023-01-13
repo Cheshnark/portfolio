@@ -1,6 +1,7 @@
 .drawer-comp {
     height: 100vh;
     width: 100vw;
+    margin-top: -2rem;
     
     display: flex;
     flex-direction: column;
@@ -17,14 +18,37 @@
 
 .menu {
     position: absolute;
+
     height: 100vh;
     width: 50vw;
     background-color: white;
+
+    transform: translateX(-100%);
+    transition: 1s;
 }
 
-.menu i {
-    position: absolute;
-    top: 3%;
-    left: 5%;
+.slide {
+    transform: translateX(0);
+    transition: 1s;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.drawer-comp__content {
+    padding: 4rem 1rem 0 1rem;
+}
+
+.drawer-comp__content li {
+    margin: 1rem;
+    list-style: none;
+}
+
+.drawer-comp__content i {
+    font-size: 1rem;
+    padding-left: 0.5rem;
 }
 

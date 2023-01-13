@@ -78,7 +78,6 @@ nav i {
 
     .nav-container .mobile-navigation {
         display:block;
-        transition: 300ms;
     }
 
     .nav-container .mobile-navigation:hover {

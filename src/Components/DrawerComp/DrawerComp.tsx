@@ -1,27 +1,43 @@
 import './DrawerComp.css'
-import {Link} from 'react-router-dom';
+import {HashLink as Hash} from 'react-router-hash-link';
+import { useEffect } from 'react';
 
-const DrawerComp = () => {
+interface Props {
+    shown:boolean
+}
+
+const DrawerComp = ({shown}:Props) => {    
+
+    useEffect(() => {
+        if(shown){
+            const menu = document.querySelector('.menu') as Element;
+            menu.classList.add('slide')  
+        }
+              
+    }, [shown])
 
     return (
         <div className="drawer-comp">
             <div className="menu">
-                <i className="fa-solid fa-x" />
+                
                 <div className="drawer-comp__content">
-                    <h2 className="title">Menú</h2>
-                    <ul>
-                        <Link to='/search'>
-                            <li>Buscador</li>
-                        </Link>
-                        
-                            <div className="drawer-unlogged">
-                            <Link to='/register'>
-                                <li>Regístrate</li>
-                            </Link>
-                            <Link to='/login'>
-                                <li>Login</li>
-                            </Link>
-                        </div>                        
+                    <div className="title-container">
+                        <h2 className="title">Menú</h2>
+                        <i className="fa-solid fa-x x-icon" />
+                    </div>
+                    <ul>                
+                        <Hash smooth to='/#about-me' style={{ textDecoration: 'none', color:'black' }}>
+                            <li><i className="fa-solid fa-angle-right"></i> Sobre mí</li>
+                        </Hash>
+                        <Hash smooth to='/#techs' style={{ textDecoration: 'none', color:'black' }}>
+                            <li><i className="fa-solid fa-angle-right"></i> Tecnologías</li>
+                        </Hash>
+                        <Hash smooth to='/#proyects' style={{ textDecoration: 'none', color:'black' }}>
+                            <li><i className="fa-solid fa-angle-right"></i> Proyectos</li>
+                        </Hash>
+                        <Hash smooth to='/#contact' style={{ textDecoration: 'none', color:'black' }}>
+                            <li><i className="fa-solid fa-angle-right"></i> Contact</li>
+                        </Hash>                      
                     </ul>
                 </div>
             </div>

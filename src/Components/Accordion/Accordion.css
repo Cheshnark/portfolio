@@ -1,0 +1,106 @@
+.proyects-container {
+    background-color: #97BFB4;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+
+    max-width: 340px;
+}
+
+.proyects-container>div {
+    border: 3px solid #F5EEDC;
+    border-radius: 5px;
+
+    margin: 0.5rem auto;
+    padding: 0.1rem 1rem;
+}
+
+.proyects-container .expandable {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.expandable.show {
+    max-height: 100vh;
+    transition: 2s;
+}
+
+.expandable-img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
+
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.proyects-container h3 {
+    margin: 0.5rem auto;
+    transition: 300ms;
+}
+
+.proyects-container h3:hover {
+    cursor: pointer;
+    color: #DD4A48;
+
+    transform: scale(110%);
+    transition: 300ms;
+}
+
+.proyects-container p {
+    text-align: justify;
+    margin: 1rem auto;
+}
+
+@media (min-width:720px) {
+    .proyects-container {
+        width: 75%;
+        max-width: 1200px;
+    }
+
+    .expandable {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .drink-and-cook .expandable-img:nth-child(1) {order:2}
+    .drink-and-cook .proyects-container p:nth-child(2) {order:1}
+
+    .drink-and-cook img {
+        grid-column:  1 / span 1;
+    }
+
+    .expandable-img {
+        width: 75%;
+        max-width: 720px;
+        min-width: 260px;
+        height: 100%;
+        max-height: 480px;
+
+        margin: 1rem auto 1rem auto;
+
+        transition: 300ms;
+    }
+
+    .expandable-img:hover {
+        transform: scale(105%);
+        transition: 300ms;
+    }
+
+    img {
+        max-width:100%;
+        max-height:100%;
+    }
+    
+    .proyects-container p {
+        width: 75%;
+        align-self: center;
+    }
+}
