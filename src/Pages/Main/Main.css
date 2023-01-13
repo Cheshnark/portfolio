@@ -25,6 +25,20 @@
     font-size: 1.5rem;
 }
 
+@media (min-width:1400px) {
+    .front-container {
+        max-width: none;
+    }
+
+    .front h1 {
+        font-size: 4.75rem;
+    }
+
+    .front p {
+        font-size: 1.7rem;
+    }
+}
+
 /* About me */
 
 .about-me {
@@ -72,7 +86,6 @@
 }
 
 .techs li {
-    
     margin-bottom: 1rem;
 
     display: flex;
@@ -87,6 +100,24 @@
 
 .techs i:hover {
     color: #DD4A48;
+}
+
+@media (min-width:720px) {
+    .techs ul {
+        grid-template-columns: repeat(5, 1fr);
+        row-gap: 1.5rem;
+        margin: 3rem auto 1rem auto;
+    }
+
+    .techs i {
+        font-size: 300%;
+    }
+}
+
+@media (min-width:1400px) {
+    .techs i {
+        font-size: 375%;
+    }
 }
 
 /* Proyects */

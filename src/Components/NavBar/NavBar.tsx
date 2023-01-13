@@ -53,9 +53,9 @@ const NavBar = () => {
               <div className="navigation">
                   <ul className="nav-links">
                     <Hash smooth to='/#about-me' style={{ textDecoration: 'none', color:'black' }}><li>About me</li></Hash>
-                      <li>Tecnologías</li>
-                      <li>Proyectos</li>
-                      <li>Contacto</li>
+                    <Hash smooth to='/#techs' style={{ textDecoration: 'none', color:'black' }}><li>Tecnologías</li></Hash>
+                    <Hash smooth to='/#proyects' style={{ textDecoration: 'none', color:'black' }}><li>Proyectos</li></Hash>
+                    <Hash smooth to='/#contact' style={{ textDecoration: 'none', color:'black' }}><li>Contacto</li></Hash>
                   </ul>
               </div>
             </div>
