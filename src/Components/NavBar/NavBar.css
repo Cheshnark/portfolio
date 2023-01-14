@@ -32,12 +32,6 @@ nav {
     transition: 300ms;
 }
 
-nav i:hover {
-    color: #DD4A48;
-    transform: scale(110%);
-    transition: 300ms;
-}
-
 .nav-links {
     list-style: none;
     text-align: center;
@@ -91,6 +85,12 @@ nav i:hover {
         align-items: center;
 
         background-color: #97BFB4;
+    }
+
+    nav i:hover {
+        color: #DD4A48;
+        transform: scale(110%);
+        transition: 300ms;
     }
 }
 
