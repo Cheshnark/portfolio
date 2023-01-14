@@ -19,14 +19,30 @@
 .front h1 {
     font-size: 3.2rem;
     color: #F5EEDC;
-}
-
-h1 span {
-    display: inline-block;
+    animation: inner-left 1s 1s ease both;
 }
 
 .front p {
     font-size: 1.5rem;
+    animation: text-clip 1s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+@keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+@keyframes inner-left {
+    from {
+        transform: translateX(-300%);
+      }
+      to {
+        transform: none;
+      }
 }
 
 @media (min-width:1400px) {
@@ -49,6 +65,7 @@ h1 span {
     background-color: #F5EEDC;
     height: 100%;
     min-height: 100vh;
+    padding-top: 3rem;
 
     display: flex;
     flex-direction: column;
@@ -62,6 +79,7 @@ h1 span {
     border-radius: 5px;
     max-width: 340px;
     text-align: justify;
+    margin-bottom: 4rem;
 }
 
 @media (min-width: 720px) {
@@ -114,10 +132,6 @@ h1 span {
     margin-bottom: 0.3rem;
 }
 
-.techs i:hover {
-    color: #DD4A48;
-}
-
 @media (min-width:720px) {
     .techs ul {
         grid-template-columns: repeat(5, 1fr);
@@ -127,6 +141,10 @@ h1 span {
 
     .techs i {
         font-size: 300%;
+    }
+
+    .techs i:hover {
+        color: #DD4A48;
     }
 }
 
@@ -143,7 +161,7 @@ h1 span {
     text-align: center;
     height: 100%;
     min-height: 100vh;
-    padding-top: 2rem;
+    padding-top: 3rem;
 
     display: flex;
     flex-direction: column;
@@ -167,8 +185,9 @@ h1 span {
 .contact {
     background-color: #4F091D;
     text-align: center;
-    height: 50vh;
-    min-height: 100%;
+    height: 100%;
+    min-height: 50vh;
+    padding: 3rem 0;
 
     display: flex;
     flex-direction: column;
@@ -199,12 +218,22 @@ h1 span {
     font-weight: 600;
 }
 
+.contact-container p span:hover {
+    cursor: pointer;
+    color: #DD4A48;
+    transition: 300ms;
+}
+
 .contact .social {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     width: 40%;
     margin: 1.5rem auto 0 auto;
+}
+
+.contact a {
+    text-decoration: none;
 }
 
 .social i {
@@ -220,5 +249,15 @@ h1 span {
     .contact-container {
         width: 50%;
         max-width: 700px;
+    }
+
+    .contact-container span {
+        transition: 300ms;
+    }
+
+    .social i:hover {
+        color: #DD4A48;
+        transform: scale(110%);
+        transition: 300ms;
     }
 }

@@ -36,7 +36,7 @@ const DrawerComp = ({shown}:Props) => {
                             <li><i className="fa-solid fa-angle-right"></i> Proyectos</li>
                         </Hash>
                         <Hash smooth to='/#contact' style={{ textDecoration: 'none', color:'black' }}>
-                            <li><i className="fa-solid fa-angle-right"></i> Contact</li>
+                            <li><i className="fa-solid fa-angle-right"></i> Contacto</li>
                         </Hash>                      
                     </ul>
                 </div>

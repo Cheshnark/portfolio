@@ -9,8 +9,10 @@ nav {
     position: fixed;
     z-index: 1;
 
-    transform: translateY(-40%);
+    transform: translateY(0);
+    animation: nav-clip 1s 3s ease-out both;
 }
+
 
 .nav-container {
     width: 100%;
@@ -24,9 +26,9 @@ nav {
     padding: 1rem;
 }
 
-nav i {
+.nav-container i {
     font-size: 2rem;
-    padding-left: 1.75rem;
+    padding: 0 1.75rem;
     transition: 300ms;
 }
 
@@ -62,8 +64,13 @@ nav i:hover {
     transition: transform 2s;
 }
 
-.smooth {
+.visible {
     transform: translateY(0);
+    transition: 1s;
+}
+
+.invisible {
+    transform: translateY(-200%);
     transition: 1s;
 }
 
@@ -71,11 +78,13 @@ nav i:hover {
 
     nav {
         display: inline-block;
+        margin: 0;
     }
 
     .nav-container {
-        width: 97%;
-        margin: 0 auto 0 auto;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
 
         display: flex;
         justify-content: space-between;
@@ -84,6 +93,7 @@ nav i:hover {
         background-color: #97BFB4;
     }
 }
+
 @media (min-width: 1400px) {
     nav i {
         font-size: 2.5rem;

@@ -47,14 +47,6 @@ img {
     transition: 300ms;
 }
 
-.proyects-container h3:hover {
-    cursor: pointer;
-    color: #DD4A48;
-
-    transform: scale(110%);
-    transition: 300ms;
-}
-
 .proyects-container p {
     text-align: justify;
     margin: 1rem auto;
@@ -65,6 +57,14 @@ img {
         width: 75%;
         max-width: 1200px;
         margin-bottom: 5rem;
+    }
+    
+    .proyects-container h3:hover {
+        cursor: pointer;
+        color: #DD4A48;
+    
+        transform: scale(110%);
+        transition: 300ms;
     }
 
     .expandable {

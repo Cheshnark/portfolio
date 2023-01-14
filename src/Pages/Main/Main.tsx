@@ -1,5 +1,4 @@
 import './Main.css';
-import { useState } from 'react';
 
 import NavBar from '../../Components/NavBar/NavBar';
 import Carousel from '../../Components/Carousel/Carousel';
@@ -13,25 +12,7 @@ const Main = () => {
         <main>
             <section className="front" id='front'>
                 <div className="front-container">
-                    <h1>
-                        <span>A</span>
-                        <span>l</span>
-                        <span>e</span>
-                        <span>j</span> 
-                        <span>a</span>
-                        <span>n</span>
-                        <span>d</span>
-                        <span>r</span>
-                        <span>o</span> <span>R</span>
-                        <span>u</span>
-                        <span>b</span>
-                        <span>i</span>
-                        <span>o</span> <span>S</span>
-                        <span>u</span>
-                        <span>e</span>
-                        <span>l</span>
-                        <span>a</span>
-                    </h1>
+                    <h1>Alejandro Rubio Suela</h1>
                     <p>Desarrollador web</p>
                 </div>
             </section>
@@ -65,11 +46,12 @@ const Main = () => {
             <section className="contact" id='contact'>
                 <h2>Contacto</h2>
                 <div className="contact-container">
-                    <p>Si quieres saber algo más o tienes alguna propuesta, puedes escribirme a</p>
-                    <p><span>alejandrorubiosuela@gmail.com</span></p>
+                    <p>Si quieres saber algo más sobre mi, ofrecerme trabajo o tienes alguna propuesta o proyecto
+                        que creas que pueda interesarme, puedes escribirme a</p>
+                    <a href="mailto:alejandrorubiosuela@gmail.com"><p><span>alejandrorubiosuela@gmail.com</span></p></a>
                     <div className="social">
-                        <a href="https://www.linkedin.com/in/alejandro-rubio-suela/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Cheshnark" target="_blank"><i className="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alejandro-rubio-suela/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Cheshnark" target="_blank" rel="noreferrer"><i className="fa-brands fa-square-github"></i></a>
                     </div>
                 </div>
             </section>

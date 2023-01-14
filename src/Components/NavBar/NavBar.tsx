@@ -42,7 +42,7 @@ const NavBar = () => {
 
     return (
         <nav style={{ visibility: !visible ? 'hidden' : 'visible'}}
-            className={`${visible ? 'smooth' : 'invisible'}`}>
+            className={`${visible ? 'visible' : 'invisible'}`}>
             <div className="nav-container">
               <Hash smooth to='/#front' style={{ textDecoration: 'none', color:'black' }}>
                 <i className="fa-solid fa-house-chimney-crack"></i>
