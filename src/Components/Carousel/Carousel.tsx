@@ -52,19 +52,20 @@ const Carousel = () => {
                     <h3>Profesional</h3>
                     <p>Soy una persona sobre todo curiosa. Autodidacta en desarrollo web, estoy especializado en React
                          y me manejo con Express en el backend y MongoDB para hacer mis cosas. No soy muy fan de las librerías de
-                         componentes ya que por alguna razón me divierte usar css vanilla, aunque me apaño con ellas. 
+                         componentes ya que por alguna razón me divierte usar CSS vanilla, aunque me apaño con ellas. 
                         <br /><br />
-                        A parte de eso, tengo formación audiovisual y un grado en Asia Oriental con especialización en China.
+                        Aparte de eso, tengo formación audiovisual y un grado en Asia Oriental con especialización en China.
                     </p>
                 </div>
                 <div className="carousel-item personal">
-                        <h3>A parte del trabajo</h3>
-                        <p>Escalo, toco el bajo, escribo relato y no ficción y estudio entre otras cosas. Dos 
-                            temas que me apasionan y que me parecen fundamentales para entender al ser humano son el ritual (desde
-                             un punto de vista evolutivo) y la filosofía política.
+                        <h3>Aparte del trabajo</h3>
+                        <p>Escalo, toco el bajo, escribo y estudio entre otras cosas. Dos temas que me apasionan y que me 
+                            parecen fundamentales para entender al ser humano son el ritual (desde un punto de vista 
+                            evolutivo) y la filosofía política.
                             <br /><br />
-                            Ahora paso la mayor parte de mi tiempo libre en la roca o leyendo y estudiando. En la actualidad estoy
-                            leyendo sobre ritual, religiones políticas y su papel en la sociedad. 
+                            Ahora paso la mayor parte de mi tiempo libre en la roca o estudiando. En la actualidad estoy
+                            leyendo sobre ritual, tanto en humanos como en otras especies, las religiones políticas y su 
+                            papel en la sociedad. 
                         </p>
                     </div>
             </div>

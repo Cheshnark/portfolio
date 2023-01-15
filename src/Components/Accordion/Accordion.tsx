@@ -21,7 +21,7 @@ const Accordion = () => {
                     </div>
                     <p>Green fue mi primer proyecto realizado en React y usa la librería de componentes Material UI. Es una 
                         app sencilla que cuenta con una página principal, portfolio, blog y un formulario de subscripción. 
-                        Cuenta además con un backend ligero hecho con Express. 
+                        Cuenta además de con un backend ligero hecho con Express. 
                         <br /><br />
                         La idea era crear una página web para una pequeña
                         empresa o freelance que tuviese todo lo necesario para defender su presencia online.</p>
@@ -33,7 +33,7 @@ const Accordion = () => {
                     <div className="expandable-img">
                             <a href="https://drink-cook.vercel.app/" target="_blank"><img src={drinkCookShot} alt="" /></a>
                     </div>
-                    <p>En este proyecto junte dos cosas que me gustan (la cerveza y cocinar) para practicar el uso de APIs y
+                    <p>En este proyecto junte dos cosas que me gustan (la cerveza y cocinar) para practicar con el uso de APIs y
                          cómo trabajar con ellas desde el backend. Está hecho también en React y en esta ocasión usé vanilla css y
                          un backend hecho en Express.
                          <br /><br />

@@ -46,7 +46,7 @@ const Main = () => {
             <section className="contact" id='contact'>
                 <h2>Contacto</h2>
                 <div className="contact-container">
-                    <p>Si quieres saber algo más sobre mi, ofrecerme trabajo o tienes alguna propuesta o proyecto
+                    <p>Si quieres saber algo más sobre mí, ofrecerme trabajo o tienes alguna propuesta o proyecto
                         que creas que pueda interesarme, puedes escribirme a</p>
                     <a href="mailto:alejandrorubiosuela@gmail.com"><p><span>alejandrorubiosuela@gmail.com</span></p></a>
                     <div className="social">
