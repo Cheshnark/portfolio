@@ -9,7 +9,6 @@ const Carousel = () => {
     const slideLeft = () => {
         carousel[0].scrollLeft = carousel[0].scrollLeft - 300;
         setShowLeft(false);
-  
     };
 
     const slideRight = () => {
@@ -24,7 +23,6 @@ const Carousel = () => {
             setTimeout(() => {
                 setShowLeft(true);
             },400)
-            
         } else {
             setTimeout(() => {
                 setShowLeft(false);
@@ -50,16 +48,19 @@ const Carousel = () => {
             <div className="carousel">
                 <div className="carousel-item professional">
                     <h3>Profesional</h3>
-                    <p>Soy una persona sobre todo curiosa. Autodidacta en desarrollo web, estoy especializado en React
-                         y me manejo con Express en el backend y MongoDB para hacer mis cosas. No soy muy fan de las librerías de
-                         componentes ya que por alguna razón me divierte usar CSS vanilla, aunque me apaño con ellas. 
+                    <p>
+                        Soy una persona sobre todo curiosa. Autodidacta en desarrollo web, estoy especializado en React y Next
+                         y me manejo con Express y Django en el backend. También sé trabajar con bases de datos tanto relacionales
+                         (MariaDB, PostgreSQL) como no relacionales (MongoDB). No soy muy fan de las librerías de
+                         componentes ya que por alguna razón me divierte usar CSS vanilla, aderezado con Tailwind. 
                         <br /><br />
                         Aparte de eso, tengo formación audiovisual y un grado en Asia Oriental con especialización en China.
                     </p>
                 </div>
                 <div className="carousel-item personal">
                         <h3>Aparte del trabajo</h3>
-                        <p>Escalo, toco el bajo, escribo y estudio entre otras cosas. Dos temas que me apasionan y que me 
+                        <p>
+                            Escalo, toco el bajo, escribo y estudio entre otras cosas. Dos temas que me apasionan y que me 
                             parecen fundamentales para entender al ser humano son el ritual (desde un punto de vista 
                             evolutivo) y la filosofía política.
                             <br /><br />

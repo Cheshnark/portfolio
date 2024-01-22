@@ -49,7 +49,7 @@ const Accordion = () => {
                     <div className="expandable-img">
                         <a href="https://rocaseca.vercel.app/" target="_blank"><img src={rocasecaShot} alt="Rocaseca site image" /></a>
                     </div>
-                    <p>Rocaseca es mi proyecto más ambicioso hasta la fecha. Otra de las cosas que me gusta mucho es la escalada y aquí
+                    <p>Rocaseca fue mi primer proyecto "grande". Otra de las cosas que me gusta mucho es la escalada y aquí
                          quería crear una solución centralizada para mirar el tiempo en las escuelas de escalada (por ahora cercanas a
                          Madrid) y poder guardar tus favoritas. 
                          <br /><br />

@@ -30,12 +30,12 @@ const Main = () => {
                         <li><i className="fa-brands fa-css3-alt"></i>CSS</li>
                         <li><i className="devicon-javascript-plain"></i>Javascript</li>
                         <li><i className="devicon-typescript-plain"></i>Typescript</li>
+                        <li><i className="devicon-python-plain"></i>Python</li>
                         <li><i className="fa-brands fa-react"></i>React</li>
+                        <li><i className="devicon-nextjs-original"></i>Next.js</li>
                         <li><i className="fa-brands fa-git"></i>Git</li>
                         <li><i className="fa-brands fa-node-js"></i>Node.js</li>
                         <li><i className="devicon-mongodb-plain"></i>MongoDB</li>
-                        <li><i className="devicon-photoshop-plain"></i>Photoshop</li>
-                        <li><i className="devicon-premierepro-plain"></i>Premiere</li>
                     </ul>
                 </div>
             </section>
