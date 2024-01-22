@@ -23,6 +23,7 @@
 
 .expandable.show {
     max-height: 100%;
+    padding-bottom: 1rem;
     transition: 2s;
 }
 
@@ -73,6 +74,9 @@ img {
     }
     .drink-and-cook .expandable-img:nth-child(1) {order:2}
     .drink-and-cook .proyects-container p:nth-child(2) {order:1}
+
+    .amplipod .expandable-img:nth-child(1) {order:2}
+    .amplipod .proyects-container p:nth-child(2) {order:1}
 
     .drink-and-cook img {
         grid-column:  1 / span 1;
