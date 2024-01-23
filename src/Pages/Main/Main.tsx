@@ -1,10 +1,13 @@
 import './Main.css';
 
+import { useState } from 'react';
+
 import NavBar from '../../Components/NavBar/NavBar';
 import Carousel from '../../Components/Carousel/Carousel';
 import Accordion from '../../Components/Accordion/Accordion';
 
 const Main = () => {
+    const [language, setLanguage] = useState('es')
     
     return (
         <>
