@@ -10,7 +10,7 @@ import texts from '../../assets/json/texts.json'
 import { Language } from '../../ts/interfaces/languageInterfaces';
 
 const Main = () => {
-    const [language, setLanguage] = useState('en')
+    const [language, setLanguage] = useState('es')
     const { front, techs, projects, contact } = texts
 
     return (
@@ -48,7 +48,7 @@ const Main = () => {
                 </section>
                 <section className="proyects" id='proyects'>
                     <h2>{projects.title[language as keyof Language]}</h2>
-                    <Accordion />
+                    <Accordion language={language} />
                 </section>
                 <section className="contact" id='contact'>
                     <h2>{contact.title[language as keyof Language]}</h2>
