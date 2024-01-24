@@ -63,10 +63,10 @@ const NavBar = ({ language, setLanguage }: NavBarProps) => {
             <Hash smooth to='/#contact' style={{ textDecoration: 'none', color: 'black' }}><li>{nav.contact[language as keyof Language]}</li></Hash>
             {language === 'es'
               ? (
-                <button onClick={() => setLanguage('en')}>EN</button>
+                <button onClick={() => setLanguage('en')}><i className="fa-solid fa-globe" /> EN</button>
               )
               : (
-                <button onClick={() => setLanguage('es')}>ESP</button>
+                <button onClick={() => setLanguage('es')}><i className="fa-solid fa-globe" /> ESP</button>
               )}
           </ul>
         </div>
@@ -74,7 +74,7 @@ const NavBar = ({ language, setLanguage }: NavBarProps) => {
       {shown && (
         <div onClick={handleClick}>
           <div className="div-drawercomp">
-            <DrawerComp shown={shown} />
+            <DrawerComp shown={shown} language={language} setLanguage={setLanguage} />
           </div>
         </div>
       )}

@@ -1,12 +1,14 @@
 import './DrawerComp.css'
-import { HashLink as Hash } from 'react-router-hash-link';
 import { useEffect } from 'react';
+import { HashLink as Hash } from 'react-router-hash-link';
 
-interface Props {
-    shown: boolean
-}
+import { Language } from '../../ts/interfaces/languageInterfaces';
 
-const DrawerComp = ({ shown }: Props) => {
+import { DrawerCompProps } from '../../ts/interfaces/props';
+import texts from '../../assets/json/texts.json'
+
+const DrawerComp = ({ shown, language, setLanguage }: DrawerCompProps) => {
+    const { drawer } = texts
 
     useEffect(() => {
         if (shown) {
@@ -21,10 +23,10 @@ const DrawerComp = ({ shown }: Props) => {
             <div className="menu">
                 <div className="drawer-comp__content">
                     <div className="title-container">
-                        <h2 className="title">Menú</h2>
+                        <h2 className="title">{drawer.title[language as keyof Language]}</h2>
                         <i className="fa-solid fa-x x-icon" />
                     </div>
-                    <ul>
+                    <ul className='drawer-comp__nav-links'>
                         <Hash smooth to='/#about-me' style={{ textDecoration: 'none', color: 'black' }}>
                             <li><i className="fa-solid fa-angle-right"></i> Sobre mí</li>
                         </Hash>
@@ -37,6 +39,13 @@ const DrawerComp = ({ shown }: Props) => {
                         <Hash smooth to='/#contact' style={{ textDecoration: 'none', color: 'black' }}>
                             <li><i className="fa-solid fa-angle-right"></i> Contacto</li>
                         </Hash>
+                        {language === 'es'
+                            ? (
+                                <button onClick={() => setLanguage('en')}><i className="fa-solid fa-globe" /> EN</button>
+                            )
+                            : (
+                                <button onClick={() => setLanguage('es')}><i className="fa-solid fa-globe" /> ESP</button>
+                            )}
                     </ul>
                 </div>
             </div>

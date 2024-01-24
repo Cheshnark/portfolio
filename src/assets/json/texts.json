@@ -19,6 +19,12 @@
 			"en": "Web Developer"
 		}
 	},
+	"drawer": {
+		"title": {
+			"es": "Menú",
+			"en": "Menu"
+		}
+	},
 	"about": {
 		"profesional": {
 			"title": {
