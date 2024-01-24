@@ -15,16 +15,17 @@
     padding: 0.1rem 1rem;
 }
 
+/* ---------- Expandable ---------- */
 .proyects-container .expandable {
     max-height: 0;
     overflow: hidden;
-    transition: all 1s ease;
+    /* transition: max-height 1s ease; */
 }
 
 .expandable.show {
     max-height: 100%;
-    padding-bottom: 1rem;
-    transition: 2s;
+    /* padding-bottom: 1rem;
+    transition: max-height 1s ease; */
 }
 
 .expandable-img {
