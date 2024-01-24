@@ -1,22 +1,22 @@
 import './Accordion.css';
 
-import greenShot from '../../images/green-shot.PNG'; 
-import drinkCookShot from '../../images/drink-cook-shot.PNG';
-import rocasecaShot from '../../images/rocaseca-shot.PNG';
-import amplipodShot from '../../images/amplipod-shot.PNG';
+import greenShot from '../../assets/images/green-shot.PNG'; 
+import drinkCookShot from '../../assets/images/drink-cook-shot.PNG';
+import rocasecaShot from '../../assets/images/rocaseca-shot.PNG';
+import amplipodShot from '../../assets/images/amplipod-shot.PNG';
 
 const Accordion = () => {
     const changeShow = (e:any) => {
-        e.target.nextSibling.classList.toggle("show")
+        e.target.nextSibling.classList.toggle('show')
     }
     
     return (
-        <div className="proyects-container">
-            <div className="green">
+        <div className='proyects-container'>
+            <div className='green'>
                 <h3 onClick={changeShow}>Green</h3>
-                <div className="expandable">
-                    <div className="expandable-img">
-                        <a href="https://green-vert.vercel.app/" target="_blank"><img src={greenShot} alt="Green site image" /></a>
+                <div className='expandable'>
+                    <div className='expandable-img'>
+                        <a href='https://green-vert.vercel.app/' target='_blank' rel='noreferrer'><img src={greenShot} alt='Green site screen capture' /></a>
                     </div>
                     <p>Green fue mi primer proyecto realizado en React y usa la librería de componentes Material UI. Es una 
                         app sencilla que cuenta con una página principal, portfolio, blog y un formulario de subscripción. 
@@ -27,11 +27,11 @@ const Accordion = () => {
                     </p>
                 </div>
             </div>
-            <div className="drink-and-cook">
+            <div className='drink-and-cook'>
                 <h3 onClick={changeShow}>Drink & Cook</h3>
-                <div className="expandable">
-                    <div className="expandable-img">
-                            <a href="https://drink-cook.vercel.app/" target="_blank"><img src={drinkCookShot} alt="Drink & Cook site image" /></a>
+                <div className='expandable'>
+                    <div className='expandable-img'>
+                            <a href='https://drink-cook.vercel.app/' target='_blank' rel='noreferrer'><img src={drinkCookShot} alt='Drink & Cook site screen capture' /></a>
                     </div>
                     <p>En este proyecto junte dos cosas que me gustan (la cerveza y cocinar) para practicar con el uso de APIs y
                          cómo trabajar con ellas desde el backend. Está hecho también en React y en esta ocasión usé vanilla css y
@@ -43,13 +43,13 @@ const Accordion = () => {
                     </p>
                 </div>
             </div>
-            <div className="rocaseca">
+            <div className='rocaseca'>
                 <h3 onClick={changeShow}>Rocaseca</h3>
-                <div className="expandable">
-                    <div className="expandable-img">
-                        <a href="https://rocaseca.vercel.app/" target="_blank"><img src={rocasecaShot} alt="Rocaseca site image" /></a>
+                <div className='expandable'>
+                    <div className='expandable-img'>
+                        <a href='https://rocaseca.vercel.app/' target='_blank' rel='noreferrer'><img src={rocasecaShot} alt='Rocaseca site screen capture' /></a>
                     </div>
-                    <p>Rocaseca fue mi primer proyecto "grande". Otra de las cosas que me gusta mucho es la escalada y aquí
+                    <p>Rocaseca fue mi primer proyecto 'grande'. Otra de las cosas que me gusta mucho es la escalada y aquí
                          quería crear una solución centralizada para mirar el tiempo en las escuelas de escalada (por ahora cercanas a
                          Madrid) y poder guardar tus favoritas. 
                          <br /><br />
@@ -58,15 +58,15 @@ const Accordion = () => {
                          de registro y login de usuario, recuperación de contraseña, y buscador. 
                          <br /><br />
                          Para protejer los sectores de escalada, solo podrás buscarlos si ya los conoces. Si no estás familiarizado con este 
-                         mundo prueba escribiendo "Manzanares el Real" o "Guadalix" en el buscador.
+                         mundo prueba escribiendo 'Manzanares el Real' o 'Guadalix' en el buscador.
                     </p>
                 </div>
             </div>
-            <div className="amplipod">
+            <div className='amplipod'>
                 <h3 onClick={changeShow}>Amplipod</h3>
-                <div className="expandable">
-                    <div className="expandable-img">
-                        <a href="https://app.amplipod.io" target="_blank"><img src={amplipodShot} alt="Amplipod site image" /></a>
+                <div className='expandable'>
+                    <div className='expandable-img'>
+                        <a href='https://app.amplipod.io' target='_blank' rel='noreferrer'><img src={amplipodShot} alt='Amplipod site screen capture' /></a>
                     </div>
                     <p>
                         Amplipod es el proyecto en el que trabajé dentro de Zeonec. Amplipod es un servicio para podcast que mediante el uspo de IA generativa permite optimizar toda la parte de marketing de los episodios de un podcast.

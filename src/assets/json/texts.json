@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "tech": {
+      "es": "Tecnologías",
+      "en": "Technologies"
+    },
+    "projects": {
+      "es": "Proyectos",
+      "en": "Projects"
+    },
+    "contact": {
+      "es": "Contacto",
+      "en": "Contact"
+    }
+  },
+  "front": {
+    "subtitle": {
+      "es": "Desarrollador web",
+      "en": "Web Developer"
+    }
+  },
+  "about": {
+    "profesional": {
+      "title": {
+        "es": "PROFESIONAL",
+        "en": "WORK"
+      },
+      "body": {
+        "es": "Soy una persona sobre todo curiosa a la que le gusta investigar. Originalmente autodidacta en desarrollo web, estoy especializado en React y Next y me manejo con Express y Django en el backend. También sé trabajar con bases de datos tanto relacionales (MariaDB, PostgreSQL) como no relacionales (MongoDB). No soy muy fan de las librerías de componentes ya que por alguna razón me divierte usar CSS vanilla, aderezado con Tailwind.\n\n Aparte de eso, tengo formación audiovisual y un grado en Asia Oriental con especialización en China.",
+        "en": "I am a curious person above all else who likes to research. Originally self-taught in web development, I specialize in React and Next and am proficient with Express and Django on the backend. I also know how to work with both relational (MariaDB, PostgreSQL) and non-relational (MongoDB) databases. I am not a big fan of component libraries because for some reason I enjoy using vanilla CSS, seasoned with Tailwind. \n\nApart from that, I have audiovisual training and a bachelor degree in East Asian Studies with a specialization in China."
+      }
+    },
+    "personal": {
+      "title": {
+        "es": "APARTE DEL TRABAJO",
+        "en": "PERSONAL"
+      },
+      "body": {
+        "es": "Leo, escribo, escalo y toco el bajo entre otras cosas. Dos temas que me apasionan y que me parecen fundamentales para entender al ser humano son el ritual (desde un punto de vista evolutivo) y la filosofía política. También me interesa mucho la historia y en general todo lo que tenga que ver con el desarrollo y evolución de la humanidad. \n\n Ahora paso la mayor parte de mi tiempo libre estudiando o en la roca. En la actualidad estoy leyendo sobre ritual, tanto en humanos como en otras especies, las religiones políticas y su papel en la sociedad.",
+        "en": "I read, write, climb, and play the bass guitar, among other things. Two topics that I am passionate about and that I believe are fundamental to understanding human beings are ritual (from an evolutionary perspective) and political philosophy. I am also very interested in history and, in general, everything that has to do with the development and evolution of humanity.\n\nNow I spend most of my free time studying or rock climbing. I am currently reading about ritual, both in humans and other species, political religions, and their role in society."
+      }
+    }
+  },
+  "techs": {
+    "title": {
+      "es": "TECNOLOGÍAS",
+      "en": "TECHNOLOGIES"
+    }
+  },
+  "projects": {
+    "title": {
+      "es": "PROYECTOS",
+      "en": "PROJECTS"
+    },
+    "green": {
+      "es": "Green fue mi primer proyecto realizado en React y usa la librería de componentes Material UI. Es una app sencilla que cuenta con una página principal, portfolio, blog y un formulario de subscripción. Cuenta además de con un backend ligero hecho con Express.\n\nLa idea era crear una página web para una pequeña empresa o freelance que tuviese todo lo necesario para defender su presencia online.",
+      "en": "Green was my first React project and uses Material UI component library. It is a simple app that has a homepage, portfolio, blog, and a subscription form. It also has a lightweight backend made with Express.\n\nThe idea was to create a website for a small business or freelancer that had everything they needed to establish their online presence."
+    },
+    "drinkCook": {
+      "es": "En este proyecto junte dos cosas que me gustan (la cerveza y cocinar) para practicar con el uso de APIs y cómo trabajar con ellas desde el backend. Está hecho también en React y en esta ocasión usé vanilla css y un backend hecho en Express.\n\nLa aplicación permite revisar el catálogo de la cervecera BrewDog y empareja cada cerveza con una receta que le vaya bien y las instrucciones para prepararla. Las APIs que consume son la de la propia BrewDog y la de Tasty para las recetas.",
+      "en": "In this project, I combined two things I love (beer and cooking) to practice using APIs and how to work with them from the backend. It is also made in React and this time I used vanilla CSS and a backend made in Express.\n\nThe application allows you to review the BrewDog brewery's catalog and pair each beer with a recipe that goes well with it and the instructions for preparing it. It consumes BrewDog's API for the beers and Tasty's API for the recipes."
+    },
+    "rocaseca": {
+      "es": "Rocaseca fue mi primer proyecto \"grande\". Otra de las cosas que me gusta mucho es la escalada y aquí quería crear una solución centralizada para mirar el tiempo en las escuelas de escalada (por ahora cercanas a Madrid) y poder guardar tus favoritas.\n\nHecho con React, vanilla css y un back en Express, Rocaseca consume la API de Accuweather y almacena esa información en una base de datos hecha en MongoDB que se actualiza bajo demanda. La app cuenta con un sistema de registro y login de usuario, recuperación de contraseña, y buscador.\n\nPara protejer algunos sectores de escalada, solo podrás buscarlos si ya los conoces. Si no estás familiarizado con este mundo prueba escribiendo 'Manzanares el Real' o 'Guadalix' en el buscador.",
+      "en": "Rocaseca was my first \"big\" project. Another thing I really enjoy is climbing, and here I wanted to create a centralized solution to check the weather at climbing crags (for now, near Madrid) and be able to save your favorites.\n\nBuild with React, vanilla CSS, and a back end in Express, Rocaseca consumes the Accuweather API and stores that information in a MongoDB database that is updated on demand. The app has a user registration and login system, password recovery, and search engine.\n\nTo protect some climbing crags, you can only search for them if you already know them. If you are not familiar with this world, try typing 'Manzanares el Real' or 'Guadalix' in the search bar."
+    },
+    "amplipod": {
+      "es": "Amplipod es el proyecto que desarrollé dentro de Zeonec. Amplipod es un servicio para podcast que mediante el uso de IA generativa permite optimizar el marketing y la promo de los episodios de un podcast.\n\nLa app permite tanto subir un episodio desde nuestro equipo como encontrarlo mediante un buscador incorporado. Una vez hecho esto, obtendremos tanto la transcripción del episodio como resultados optimizados para marketing (Instagram, Linkedin, keywords, blog...). Además, permite la creación de imágenes relacionadas con el episodio y videos con subtítulos para la promoción del capítulo en redes.\n\nA nivel técnico, algunas de las tecnologías usadas para construir el sitio son: Next.js 13, Express.js, Django, Tailwind o Supabase.",
+      "en": "Amplipod is the project I developed within Zeonec. Amplipod is a podcast service that uses generative AI to optimize the marketing and promotion of podcast episodes.\n\nThe app allows you to upload an episode from your computer or find it using the built-in search engine. Once you do this, you will get both the transcript of the episode and optimized results for marketing (Instagram, LinkedIn, keywords, blog, etc.). In addition, it allows you to create images related to the episode and videos with subtitles for the promotion of the chapter on social media.\n\nAt the technical level, some of the technologies used to build the site are: Next.js 13, Express.js, Django, Tailwind, or Supabase."
+    }
+  },
+  "contact": {
+    "title": {
+      "es": "CONTACTO",
+      "en": "CONTACT"
+    },
+    "body": {
+      "es": "Si quieres saber algo más sobre mí, ofrecerme trabajo o tienes alguna propuesta o proyecto que creas que pueda interesarme, puedes escribirme a",
+      "en": "If you want to know more about me, offer me a job, or have any proposal or project that you think may interest me, you can write to me at"
+    }
+  }
+}

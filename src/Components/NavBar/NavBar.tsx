@@ -2,13 +2,18 @@ import './NavBar.css';
 import { useState, useEffect } from 'react';
 import {HashLink as Hash} from 'react-router-hash-link';
 
-import DrawerComp from '../DrawerComp/DrawerComp';
+import { NavBarProps } from '../../ts/interfaces/props';
+import { Language } from '../../ts/interfaces/languageInterfaces';
 
-const NavBar = () => {
+import DrawerComp from '../DrawerComp/DrawerComp';
+import texts from '../../assets/json/texts.json'
+
+const NavBar = ({ language, setLanguage }:NavBarProps) => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
     const [shown, setShown] = useState(false); 
     const [hidden,setHidden] = useState("visible")
+    const { nav } = texts
 
     useEffect( () => {
       window.addEventListener('scroll', handleScroll);
@@ -53,9 +58,9 @@ const NavBar = () => {
               <div className="navigation">
                   <ul className="nav-links">
                     <Hash smooth to='/#about-me' style={{ textDecoration: 'none', color:'black' }}><li>About me</li></Hash>
-                    <Hash smooth to='/#techs' style={{ textDecoration: 'none', color:'black' }}><li>Tecnologías</li></Hash>
-                    <Hash smooth to='/#proyects' style={{ textDecoration: 'none', color:'black' }}><li>Proyectos</li></Hash>
-                    <Hash smooth to='/#contact' style={{ textDecoration: 'none', color:'black' }}><li>Contacto</li></Hash>
+                    <Hash smooth to='/#techs' style={{ textDecoration: 'none', color:'black' }}><li>{nav.tech[language as keyof Language]}</li></Hash>
+                    <Hash smooth to='/#proyects' style={{ textDecoration: 'none', color:'black' }}><li>{nav.projects[language as keyof Language]}</li></Hash>
+                    <Hash smooth to='/#contact' style={{ textDecoration: 'none', color:'black' }}><li>{nav.contact[language as keyof Language]}</li></Hash>
                   </ul>
               </div>
             </div>

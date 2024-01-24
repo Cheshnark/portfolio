@@ -1,10 +1,16 @@
 import './Carousel.css';
 import { useState, useEffect } from 'react';
 
-const Carousel = () => {
+import { LanguageProp } from '../../ts/interfaces/props';
+import { Language } from '../../ts/interfaces/languageInterfaces';
+
+import texts from '../../assets/json/texts.json'
+
+const Carousel = ({ language }:LanguageProp) => {
     const [showLeft, setShowLeft] = useState(false);
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const carousel = document.getElementsByClassName('carousel') as HTMLCollectionOf<Element>;
+    const { about } = texts
 
     const slideLeft = () => {
         carousel[0].scrollLeft = carousel[0].scrollLeft - 300;
@@ -47,27 +53,12 @@ const Carousel = () => {
             }
             <div className="carousel">
                 <div className="carousel-item professional">
-                    <h3>Profesional</h3>
-                    <p>
-                        Soy una persona sobre todo curiosa. Autodidacta en desarrollo web, estoy especializado en React y Next
-                         y me manejo con Express y Django en el backend. También sé trabajar con bases de datos tanto relacionales
-                         (MariaDB, PostgreSQL) como no relacionales (MongoDB). No soy muy fan de las librerías de
-                         componentes ya que por alguna razón me divierte usar CSS vanilla, aderezado con Tailwind. 
-                        <br /><br />
-                        Aparte de eso, tengo formación audiovisual y un grado en Asia Oriental con especialización en China.
-                    </p>
+                    <h3>{about.profesional.title[language as keyof Language]}</h3>
+                    <p>{about.profesional.body[language as keyof Language]}</p>
                 </div>
                 <div className="carousel-item personal">
-                        <h3>Aparte del trabajo</h3>
-                        <p>
-                            Escalo, toco el bajo, escribo y estudio entre otras cosas. Dos temas que me apasionan y que me 
-                            parecen fundamentales para entender al ser humano son el ritual (desde un punto de vista 
-                            evolutivo) y la filosofía política.
-                            <br /><br />
-                            Ahora paso la mayor parte de mi tiempo libre en la roca o estudiando. En la actualidad estoy
-                            leyendo sobre ritual, tanto en humanos como en otras especies, las religiones políticas y su 
-                            papel en la sociedad. 
-                        </p>
+                        <h3>{about.personal.title[language as keyof Language]}</h3>
+                        <p>{about.personal.body[language as keyof Language]}</p>
                     </div>
             </div>
             {!showLeft &&
